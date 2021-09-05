@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pong Game</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <body onload="onLoad()">
+    <div class="container">
+      <div class="header">
+        <img src="assets/images/logo.png" />
+      </div>
+      <div class="content">
+        <div class="menu">
+          <div class="row">
+            <a class="baslabtn" href="#" onclick="oyunuBaslat()">
+              BASLA
+            </a>
+          </div>
+          <div class="row title">Zorluk Seviyesi</div>
+          <div class="row opt">
+            <a href="#" id="zorluk1" onclick="zorlukDegistir(1)">KOLAY</a>
+            <a
+              href="#"
+              class="selected"
+              id="zorluk2"
+              onclick="zorlukDegistir(2)"
+              >NORMAL</a
+            >
+            <a href="#" id="zorluk3" onclick="zorlukDegistir(3)">CILGIN</a>
+          </div>
+        </div>
+        <div class="end">
+          <div class="row">
+            <img src="" style="margin: auto;" id="endimg" />
+          </div>
+          <div class="row title" id="endtitle"></div>
+          <div class="row opt">
+            <a href="#" onclick="menuGoster()">MENU</a>
+            <a href="#" onclick="oyunuBaslat()">TEKRAR OYNA</a>
+          </div>
+        </div>
+        <canvas width="1000" height="600" />
+      </div>
+      <div class="footer">
+        <a href="#" class="audio" onclick="sesAcKapa();">
+          <img class="off" src="" id="sesbutton" />
+        </a>
+      </div>
+    </div>
+    <script src="code.js" />
+  </body>
+</html>
